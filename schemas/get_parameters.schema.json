@@ -9,14 +9,19 @@
     "response": {
       "type": "object",
       "properties": {
-        "syst_pars": {
+        "sys_pars": {
           "type": "object",
           "description": "Mapping of systematic parameter names to their current numerical values",
           "additionalProperties": { "type": "number" }
         },
+        "osc_pars": {
+          "type": "object",
+          "description": "Mapping of oscillation parameter names to their current numerical values, in NuDock convention (e.g. Theta23 rather than sin2th_23). Includes any extended-model parameters such as NSI.",
+          "additionalProperties": { "type": "number" }
+        },
         "duration_us": { "type": "number" }
       },
-      "required": ["sys_pars"],
+      "required": ["sys_pars", "osc_pars"],
       "additionalProperties": false
     }
   },

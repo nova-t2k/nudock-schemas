@@ -13,8 +13,10 @@
             "Theta23": { "type": "number" },
             "Theta13": { "type": "number" },
             "Theta12": { "type": "number" },
-            "DeltaCP": { "type": "number" },
-            "^[a-zA-Z0-9_]+$": { "type": "number"}
+            "DeltaCP": { "type": "number" }
+          },
+          "patternProperties": {
+            "^[a-zA-Z0-9_]+$": { "type": "number" }
           },
           "required": [ "Deltam2_32", "Deltam2_21", "Theta23", "Theta13", "Theta12", "DeltaCP" ],
           "additionalProperties": false
