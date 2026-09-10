@@ -1,0 +1,21 @@
+{
+  "$id": "log_likelihood",
+  "type": "object",
+  "properties": {
+    "request": {
+      "type": "string",
+      "additionalProperties": false
+    },
+    "response": {
+      "type": "object",
+      "properties": {
+        "log_likelihood" : {"type": "number"},
+        "duration_us": {"type": "number"}
+      },
+      "required": ["log_likelihood"],
+      "additionalProperties": false
+    }
+  },
+  "required": ["request", "response"],
+  "additionalProperties": false
+}
